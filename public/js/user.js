@@ -15,9 +15,11 @@ apos.define('apostrophe-rich-text-permalinks-editor', {
 
     var superBeforeShow = self.beforeShow;
     self.beforeShow = function(callback) {
-      self.$form = self.$el.find('[data-apos-form]');
-      self.$form.css('opacity', 0);
-      return apos.schemas.populate(self.$form, self.schema, {}, callback);
+      return superBeforeShow(function () {
+        self.$form = self.$el.find('[data-apos-form]');
+        self.$form.css('opacity', 0);
+        return apos.schemas.populate(self.$form, self.schema, {}, callback);
+      });
     };
 
     var superAfterShow = self.afterShow;
