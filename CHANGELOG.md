@@ -1,6 +1,6 @@
 ## Changelog
 
-### UNRELEASED
+### 2.0.6 (2025-07-09)
 
 * Fixed a bug that prevented links from being saved. Links to documents were randomly failing due to a timing issue.
 
