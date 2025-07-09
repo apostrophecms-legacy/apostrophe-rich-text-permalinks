@@ -1,6 +1,6 @@
 {
   "name": "apostrophe-rich-text-permalinks",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Create permalinks to Apostrophe content inside the rich text editor. Your permalinks will stay fresh if the content moves.",
   "main": "index.js",
   "scripts": {
